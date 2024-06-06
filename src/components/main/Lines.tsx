@@ -13,7 +13,7 @@ const Lines = ({
       const keywordList = emojiData.keywords.split(" ");
       for (let i = 0; i <= keywordList.length - 1; i++) {
         const keyword = keywordList[i];
-        if (keyword.includes(search)) {
+        if (keyword.includes(search.toLowerCase())) {
           return true;
         }
       }
